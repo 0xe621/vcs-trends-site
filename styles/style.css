@@ -1,0 +1,90 @@
+:root {
+    --bg: #f7fafc;
+    --card: #fff;
+    --accent: #2563eb;
+    --muted: #6b7280;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+    background: var(--bg);
+    color: #111827;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #e6eaf0;
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--muted);
+    margin-left: 1rem;
+    padding: .5rem .75rem;
+    border-radius: .5rem;
+}
+
+nav a:hover {
+    background: #f1f5f9;
+    color: #000;
+}
+
+nav a.primary {
+    color: #fff;
+    background: var(--accent);
+}
+
+main {
+    padding: 2rem 1.25rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid #e6eaf0;
+    padding: 1.25rem;
+    border-radius: .5rem;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, .03);
+}
+
+.actions {
+    display: flex;
+    gap: .75rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .5rem .75rem;
+    border-radius: .4rem;
+    text-decoration: none;
+    color: #fff;
+    background: var(--accent);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: var(--muted);
+    font-size: .9rem;
+}
+
+@media (min-width: 640px) {
+    .actions {
+        justify-content: flex-start;
+    }
+}
